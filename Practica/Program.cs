@@ -13,7 +13,7 @@ namespace Practica
             string nombre;
             int edad;
             dato = int.Parse(Console.ReadLine());
-            Persona[] P = new Persona[dato];  
+            Persona[] Pers = new Persona[dato];  
             for (int c = 0; c < dato; c++)
             {
                 Console.WriteLine("Ingrese Nombre del Estudiante N° " + (c + 1));
@@ -21,16 +21,16 @@ namespace Practica
                 Console.WriteLine("Ingrese Edad del Estudiante N° " + (c + 1));
                 edad = int.Parse(Console.ReadLine());
 
-                P[cont].Tnombre = nombre;
-                P[cont].Tedad = edad;
+                Pers[cont].Tnombre = nombre;
+                Pers[cont].Tedad = edad;
 
                
             }
             for (int c = 0; c < dato; c++)
             {
-                Console.Write(P[c].Tnombre);
+                Console.Write(Pers[c].Tnombre);
                 Console.Write(" ");
-                Console.WriteLine(P[c].Tedad);
+                Console.WriteLine(Pers[c].Tedad);
             }
             
             void burbuja()
