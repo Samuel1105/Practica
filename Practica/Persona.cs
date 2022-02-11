@@ -6,7 +6,18 @@ namespace Practica
 {
     class Persona
     {
-        public string Nombre { get; set; }
-        public int Edad { get; set; }
+        string Nombre;
+        int Edad;
+
+        public string Tnombre
+        {
+            get { return Nombre; }
+            set { Nombre = value; }
+        }
+        public int Tedad
+        {
+            get { return Edad; }
+            set { Edad = value; }
+        }
     }
 }
