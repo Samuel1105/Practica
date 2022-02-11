@@ -17,13 +17,13 @@ namespace Practica
             for (int c = 0; c < dato; c++)
             {
                 Console.WriteLine("Ingrese Nombre del Estudiante N° " + (c + 1));
-                nombre = Console.ReadLine();
+                nombre = Console.ReadLine().ToString();
                 Console.WriteLine("Ingrese Edad del Estudiante N° " + (c + 1));
                 edad = int.Parse(Console.ReadLine());
-
+                
                 Pers[cont].Tnombre = nombre;
                 Pers[cont].Tedad = edad;
-
+                cont++;
                
             }
             for (int c = 0; c < dato; c++)
